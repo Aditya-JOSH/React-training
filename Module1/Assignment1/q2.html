@@ -1,0 +1,30 @@
+<!-- Given the above html, find out what happens when you try to access the element h1 in
+javascript (using document.getElementById) and change its content to “Goodbye World”
+when the script is attached:
+● in the head tag
+● at the start of the body tag
+● at the end of the body tag -->
+
+<html>
+<head>
+    <script>
+        document.getElementById("test").textContent = "Changed Hello, World!";
+        // The above line will throw an error because the script is executed before the DOM is fully loaded.
+        // This will throw an error: Uncaught TypeError: Cannot set properties of null (setting 'textContent')
+    </script>
+</head>
+    <body>
+        <script>
+            document.getElementById("test").textContent = "Changed Hello, World!";
+            // The above line will throw an error because the script is executed before the DOM is fully loaded.
+            // This will throw an error: Uncaught TypeError: Cannot set properties of null (setting 'textContent')
+        </script>
+
+        <h1 id="test">Hello World!</h1>
+
+        <script>
+            document.getElementById("test").textContent = "Changed Hello, World!";
+            // This line will work because the DOM is fully loaded by this point.
+        </script>
+    </body>
+</html>
