@@ -26,7 +26,7 @@ test(() => callbackFunc())
 // Return value: undefined (because test function doesn't return anything)
 
 
-// What happens when you return callback from the test function? 
+// What happens when you return callback() from the test function?
 // Answer: 
 
 
@@ -45,7 +45,8 @@ test(callbackFunc);
 // Return value: 5 (the return value of callbackFunc)
 
 
-// What happens when you return callback() from the test function?
+// What happens when you return callback from the test function? 
+// Answer:
 
 function test(callback){
     return callback;

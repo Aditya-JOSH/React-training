@@ -174,9 +174,9 @@ console.log(getById(arr_of_obj, 3));
 
 //Output:
 // {
-//     id: 10,
-//     first_name: 'Townie',
-//     email: 'tpetyt9@upenn.edu',
-//     date_of_birth: '2018/09/01'
+//     id: 3,
+//     first_name: 'Demetris',
+//     email: 'dkilshall2@elpais.com',
+//     date_of_birth: '2018/12/31'
 //   }
   

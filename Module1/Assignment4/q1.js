@@ -15,7 +15,11 @@ function test() {
     }
     console.log("This won't run either"); // This won't run either
 }
-console.log(test()); // Output: "Found 2"
+console.log(test()); 
+// Output: 
+// "0
+//  1 
+//  Found 2"
 
 
 // Can we pass a return value from within a loop? Can you return from inside an if
